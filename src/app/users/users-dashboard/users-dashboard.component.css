@@ -1,0 +1,15 @@
+.conteiner {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0ac;
+    border-radius: 20px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 4.1);
+  }
+
+  .linea1{
+    background-color: #cff4fc;
+  }
+.fila2{
+  background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,38 @@
+
+
+<div class="conteiner">
+    <table class="table" id="table">
+        <thead>
+          <tr class="table-secondary">
+            <th class="linea1" scope="col">ID</th>
+            <th class="linea1" scope="col">Name</th >
+            <th class="linea1" scope="col">Email</th >
+            <th class="linea1" scope="col">Phone</th>
+            <th class="linea1" scope="col">website</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr class="data-users" *ngFor="let user of users">
+                <td class="table-info">{{user.id}}</td>
+                <td class="fila2">{{user.name}}</td>
+                <td class="fila2">{{user.email}}</td>
+                <td class="fila2">{{user.phone}}</td> 
+                <td class="fila2">{{user.website}}</td>
+            </tr>
+        </tbody>
+      </table>
+
+     
+</div>
+
+
+
+<h1>FORMULARIO DE USUARIOS</h1>
+
+
+
+<app-edit-user-form 
+[user]="selectedUser"
+(eventEmitter)="addUser($event)"
+></app-edit-user-form>
+  
